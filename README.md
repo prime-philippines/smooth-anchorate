@@ -1,8 +1,8 @@
-# anchorate
+# smooth anchorate
 
-> Scroll to anchor links.
+> Smooth Scroll to anchor links.
 
-Scroll to anchor links with client-side routes e.g. with [history]'s `listen`, [React Router]'s `onUpdate`, or [Gatsby]'s `onRouteChange`.
+Smooth Scroll to anchor links with client-side routes e.g. with [history]'s `listen`, [React Router]'s `onUpdate`, or [Gatsby]'s `onRouteChange`.
 Register a listener to call this and when `window.location.hash` isn't empty,
 it'll [scrollIntoView] first matching element by `id` or `name` per [spec].
 
@@ -10,31 +10,31 @@ Originally based on: https://github.com/reactjs/react-router/issues/394#issuecom
 
 ## Install
 ```
-npm install --save anchorate
+npm install --save smooth-anchorate
 ```
 
 ## Use
 
 ### [history]
 ```js
-import { anchorate } from 'anchorate'
+import { smoothAnchorate } from 'smooth-anchorate'
 import { createHistory } from 'history'
  
 const history = createHistory()
 
 history.listen(() => {
-  anchorate()
+  smoothAnchorate()
 })
 ```
 
 ### [React Router]
 ```js
-import { anchorate } from 'anchorate'
+import { smoothAnchorate } from 'smooth-anchorate'
 import { render } from 'react-dom'
 import { Router, browserHistory } from 'react-router'
 
 function onUpdate () {
-  anchorate()
+  smoothAnchorate()
 }
 
 // ...
@@ -50,10 +50,10 @@ render((
 ### [Gatsby]
 In `gastby-browser.js`:
 ```js
-import { anchorate } from 'anchorate'
+import { smoothAnchorate } from 'smooth-anchorate'
 
 exports.onRouteChange = () => {
-  anchorate()
+  smoothAnchorate()
 }
 ```
 

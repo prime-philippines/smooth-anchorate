@@ -48,6 +48,6 @@ exports.selectors = function selectors (h) {
   }
 }
 
-exports.anchorate = function anchorate (options) {
+exports.smoothAnchorate = function smoothAnchorate (options) {
   exports.hash(window.location.hash, options)
 }
