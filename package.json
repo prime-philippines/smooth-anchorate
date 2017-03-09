@@ -1,27 +1,28 @@
 {
-  "name": "anchorate",
-  "version": "1.1.0",
-  "description": "Scroll to anchor links.",
+  "name": "smooth-anchorate",
+  "version": "1.0.0",
+  "description": "Smooth scrolling to anchor links.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adjohnson916/anchorate.git"
+    "url": "https://github.com/juank11memphis/smooth-anchorate.git"
   },
   "scripts": {
     "test": "eslint index.js",
     "publish-please": "publish-please",
     "prepublish": "publish-please guard"
   },
-  "author": "Anders D. Johnson",
+  "author": "Juan Morales <juank.memphis@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "css.escape": "^1.5.0"
+    "css.escape": "1.5.1",
+    "smoothscroll-polyfill": "0.3.4"
   },
   "devDependencies": {
-    "eslint": "^3.2.2",
-    "eslint-config-standard": "^5.3.5",
-    "eslint-plugin-promise": "^2.0.1",
-    "eslint-plugin-standard": "^2.0.0",
-    "publish-please": "^2.1.4"
+    "eslint": "3.17.1",
+    "eslint-config-standard": "7.0.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "2.1.1",
+    "publish-please": "2.2.0"
   }
 }

@@ -4,6 +4,7 @@
  */
 
 var CSSescape = require('css.escape')
+require('smoothscroll-polyfill').polyfill();
 
 exports.hash = function hash (h, options) {
   if (!h) return
@@ -22,7 +23,9 @@ exports.hash = function hash (h, options) {
 
 exports.scroller = function scroller (el) {
   if (!el) return false
-  el.scrollIntoView()
+  el.scrollIntoView({
+    behavior: 'smooth'
+  })
   return true
 }
 
