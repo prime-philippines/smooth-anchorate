@@ -1,6 +1,6 @@
 {
   "name": "smooth-anchorate",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Smooth scrolling to anchor links.",
   "main": "index.js",
   "repository": {
